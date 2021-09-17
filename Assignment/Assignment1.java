@@ -1,3 +1,5 @@
+// Assignment 1 : To arrange the array into ascending order
+
 import java.util.*;
 
 class Assignment1{
