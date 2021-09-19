@@ -34,7 +34,7 @@ public class Assignment2 {
                     }
                 }
                 if (!f) {
-                    System.out.println(k+" was not found in array");
+                    System.out.println(k + " was not found in array");
                 }
                 break;
             case 2:
@@ -45,9 +45,9 @@ public class Assignment2 {
                     }
                 }
                 if (!f) {
-                    System.out.println(k+" was not found in array");
+                    System.out.println(k + " was not found in array");
                 }
-                break;    
+                break;
         }
 
         sc.close();

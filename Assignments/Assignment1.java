@@ -2,7 +2,7 @@
 
 import java.util.*;
 
-public class Assignment1{
+public class Assignment1 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -15,16 +15,16 @@ public class Assignment1{
             a[i] = sc.nextInt();
 
         for (int i = 0; i < n; i++)
-            for (int j = 0; j < n-i-1; j++)
-                if (a[j] > a[j+1]) {
+            for (int j = 0; j < n - i - 1; j++)
+                if (a[j] > a[j + 1]) {
                     int temp = a[j];
-                    a[j] = a[j+1];
-                    a[j+1] = temp;
+                    a[j] = a[j + 1];
+                    a[j + 1] = temp;
                 }
 
         System.out.println("The ascending order of the elements are ");
         for (int i = 0; i < n; i++) {
-                System.out.print(a[i]+" ");
+            System.out.print(a[i] + " ");
         }
 
         System.out.println();
