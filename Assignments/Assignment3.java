@@ -3,49 +3,6 @@
 import java.util.*;
 
 public class Assignment3 {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        clearScreen();
-        System.out.println("Enter the limit for the Circular Queue");
-        int n = sc.nextInt();
-        CircularQueue cQueue = new CircularQueue(n);
-
-        int ch = 1;
-        while (ch != 0) {
-            System.out.println("\nEnter the following options for respective operations");
-            System.out.println("1 for enQueue / Adding element");
-            System.out.println("2 for deQueue / Removing element");
-            System.out.println("3 for printing the Circular Queue");
-            System.out.println("0 to quit");
-            System.out.println("Enter the correct option:");
-            ch = sc.nextInt();
-
-            switch (ch) {
-                case 0:
-                    System.exit(0);
-                case 1:
-                    System.out.println("\nEnter the element to be added to the Circular Queue:");
-                    int x = sc.nextInt();
-                    cQueue.enCQueue(x);
-                    // clearScreen();
-                    break;
-                case 2:
-                    cQueue.deCQueue();
-                    // clearScreen();
-                    break;
-                case 3:
-                    cQueue.displayCQueue();
-                    // clearScreen();
-                    break;
-                default:
-                    System.out.println("\nPlease enter valid option.......!");
-            }
-        }
-
-        System.out.println();
-        sc.close();
-    }
-
     // Class to implement Circular Queue operations
     public static class CircularQueue {
         int maxSize, front, rear, currentSize;
@@ -94,6 +51,8 @@ public class Assignment3 {
             for (Integer element : cqueue) {
                 System.out.print(element + " ");
             }
+            System.out.println("Front index points to " + front + 1);
+            System.out.println("Rear index points to " + rear + 1);
             System.out.println();
         }
     }
@@ -101,5 +60,48 @@ public class Assignment3 {
     static void clearScreen() {
         System.out.print("\033[H\033[2J");
         System.out.flush();
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        clearScreen();
+        System.out.println("Enter the limit for the Circular Queue");
+        int n = sc.nextInt();
+        CircularQueue cQueue = new CircularQueue(n);
+
+        int ch = 1;
+        while (ch != 0) {
+            System.out.println("\nEnter the following options for respective operations");
+            System.out.println("1 for enQueue / Adding element");
+            System.out.println("2 for deQueue / Removing element");
+            System.out.println("3 for printing the Circular Queue");
+            System.out.println("0 to quit");
+            System.out.println("Enter the correct option:");
+            ch = sc.nextInt();
+
+            switch (ch) {
+                case 0:
+                    System.exit(0);
+                case 1:
+                    System.out.println("\nEnter the element to be added to the Circular Queue:");
+                    int x = sc.nextInt();
+                    cQueue.enCQueue(x);
+                    // clearScreen();
+                    break;
+                case 2:
+                    cQueue.deCQueue();
+                    // clearScreen();
+                    break;
+                case 3:
+                    cQueue.displayCQueue();
+                    // clearScreen();
+                    break;
+                default:
+                    System.out.println("\nPlease enter valid option.......!");
+            }
+        }
+
+        System.out.println();
+        sc.close();
     }
 }
