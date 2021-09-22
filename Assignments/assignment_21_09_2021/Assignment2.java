@@ -1,6 +1,6 @@
 // Assignment 2 : Calculate the number of digits in the given number
 
-package Assignment_21_09_2021;
+package assignment_21_09_2021;
 
 import java.util.Scanner;
 

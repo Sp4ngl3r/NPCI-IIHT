@@ -1,6 +1,6 @@
 // Assignment 5 : Find the duplicates in the array and sort them based on their number of occurance
 
-package Assignment_21_09_2021;
+package assignment_21_09_2021;
 
 import java.util.Scanner;
 

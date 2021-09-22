@@ -1,6 +1,6 @@
 // Assignment 1 : Identify whether the second value is even and square or a multiple of the first value
 
-package Assignment_21_09_2021;
+package assignment_21_09_2021;
 
 import java.util.Scanner;
 
