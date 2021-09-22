@@ -1,6 +1,6 @@
 // Assignment 5 : Sort the elements in a Linkedlist & push them into a Queue
 
-package Assignment_17_09_2021;
+package assignment_17_09_2021;
 public class Assignment5 {
     Node head = null;
 

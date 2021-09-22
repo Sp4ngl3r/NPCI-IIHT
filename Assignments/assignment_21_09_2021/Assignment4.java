@@ -1,6 +1,6 @@
 // Assignment 4 : Print Reverse Fibonacci Series
 
-package Assignment_21_09_2021;
+package assignment_21_09_2021;
 
 import java.util.Scanner;
 
