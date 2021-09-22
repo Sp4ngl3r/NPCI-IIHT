@@ -1,5 +1,6 @@
 // Assignment 2 : To find the position of the element in the array
 
+package Assignment_17_09_2021;
 import java.util.*;
 
 public class Assignment2 {
