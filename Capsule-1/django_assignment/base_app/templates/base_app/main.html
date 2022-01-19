@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport"
+		      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>To-Do List</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Comfortaa&family=Roboto&display=swap" rel="stylesheet">
+		<style>
+            body {
+                background-color: #ffc9c9;
+                padding-top: 50px;
+                font-family: 'Comfortaa', cursive;
+            }
+
+            h1, h2, h3, h4, h5, h6 {
+                font-family: "Roboto", sans-serif;
+            }
+
+            a, p {
+                color: #4b5156;
+            }
+
+            a {
+                font-weight: 600;
+            }
+
+            .container {
+                max-width: 550px;
+                margin: auto;
+                background-color: #ffffff;
+                -webkit-box-shadow: 5px 5px 16px -4px rgba(0, 0, 0, 0.21);
+                box-shadow: 5px 5px 16px -4px rgba(0, 0, 0, 0.21);
+            }
+
+            .header-bar {
+                display: flex;
+                justify-content: space-between;
+                color: #32303a;
+                padding: 10px 10px 20px 30px;
+                border-radius: 2px 2px 0 0;
+                background: linear-gradient(90deg, #abf3df 0%, #6febdd 63%, #107ddc 100%);
+            }
+
+            .header-bar a {
+                color: rgb(247, 247, 247);
+                text-decoration: none;
+                margin: 25px;
+                font-weight: bold;
+            }
+
+            .task-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 20px;
+                background-color: azure;
+                border-top: 10px solid #e1afaf;
+            }
+
+            .task-title {
+                display: flex;
+                align-items: end;
+            }
+
+            .task-title a {
+                align-items: end;
+                text-decoration: none;
+                color: #456442;
+                margin-left: 16px;
+                font-weight: bolder;
+            }
+
+            .task-complete-icon {
+                height: 20px;
+                width: 20px;
+                background-color: rgb(35, 225, 196);
+                border-radius: 50%;
+                box-shadow: 3px 3px 6px -2px rgb(69, 100, 66);
+            }
+
+            .task-incomplete-icon {
+                height: 20px;
+                width: 20px;
+                background-color: rgb(210, 234, 204);
+                border-radius: 50%;
+                box-shadow: 3px 3px 6px -2px rgb(69, 100, 66);
+            }
+
+            .delete-task {
+                display: flex;
+                align-items: end;
+                text-decoration: none;
+                font-weight: 900;
+                color: orangered;
+                font-size: 37px;
+                line-height: 0;
+            }
+
+            #search-box-wrapper {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 10px;
+                background: linear-gradient(90deg, #abf3df 0%, #6febdd 63%, #107ddc 100%);
+            }
+
+            #add-link {
+                color: #e6ff00;
+                text-decoration: none;
+                font-size: 52px;
+                text-shadow: 2px 2px #294160;
+                margin-right: 20px;
+            }
+
+
+            input[type=text],
+            input[type=password],
+            textarea {
+                border: 1px solid #757575;
+                border-radius: 5px;
+                padding: 10px;
+                width: 90%;
+            }
+
+
+            label {
+                padding-top: 10px !important;
+                display: block;
+            }
+
+            ::placeholder {
+                font-weight: 600;
+                opacity: 0.7;
+            }
+
+            .button {
+                border: 1px solid #757575;
+                background-color: #07e5e5;
+                color: #090d96;
+                font-weight: bold;
+                padding: 10px;
+                font-size: 14px;
+                border-radius: 5px;
+                cursor: pointer;
+                text-decoration: none;
+            }
+
+            .card {
+                padding: 30px;
+            }
+
+		</style>
+	</head>
+
+	<body>
+		<div class="container">
+			{% block content %}
+			
+			{% endblock content %}
+		</div>
+	</body>
+</html>
