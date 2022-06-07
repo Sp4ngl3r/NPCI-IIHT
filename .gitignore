@@ -2,3 +2,4 @@
 *.class
 *.adoc
 .vscode
+.idea
